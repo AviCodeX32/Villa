@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+:root {
+  /* Rich Deep Obsidian & Charcoal Farmhouse Palette */
+  --background: 20 20% 5%;          /* #0F0A07 */
+  --foreground: 40 30% 96%;          /* #FDFBF7 */
+  --on-background: 40 20% 90%;       /* #ECE5DA */
+  --primary: 38 92% 50%;             /* #F59E0B Gold */
+  --primary-foreground: 20 25% 7%;   /* #17110D */
+  --accent: 43 96% 56%;              /* #FBBF24 Amber */
+  --accent-foreground: 20 25% 7%;
+  --border: 25 15% 18%;              /* #332B25 */
+  --muted-foreground: 30 10% 65%;    /* #AAA49C */
+  --secondary: 20 20% 9%;            /* #1B120D */
+}
+
+/* Force dark canvas background globally */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0d0907;
+  color: #fdfbf7;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism tuned for dark contrast */
+.glass-dark {
+  background: rgba(13, 9, 7, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.15);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gold Typography & Buttons */
+.gold-text {
+  background: linear-gradient(135deg, #fce08b 0%, #dfac40 50%, #c58c1d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #0f0a07 !important;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+.btn-gold:hover {
+  filter: brightness(1.12);
+  transform: translateY(-1px);
+}
+
+.btn-outline-gold {
+  border: 1px solid rgba(245, 158, 11, 0.5);
+  color: #fce08b;
+  background: rgba(245, 158, 11, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+.btn-outline-gold:hover {
+  background: rgba(245, 158, 11, 0.15);
+}
+
+/* Utility hide scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
