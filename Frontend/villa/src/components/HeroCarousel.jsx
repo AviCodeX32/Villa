@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { CalendarDays, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 
-const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:4000';
+const API_BASE = import.meta.env.VITE_BACKEND_URL || 'http://localhost:4000';
 
 const DEFAULT_SLIDES = [
   {
